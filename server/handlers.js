@@ -2,13 +2,13 @@ const express = require('express');
 var nodemailer = require("nodemailer");
 const bcrypt = require('bcrypt');
 const  saltRounds =  10;
-var items = require('../data-mongodb');
+var items = require('../db');
 var Sad=items.Sad
 var Happy=items.Happy
-var Wedding=items.Wedding
+// var Wedding=items.Wedding
 var Random=items.Random
-var Tarab=items.Tarab
-var Romantic=items.Romantic
+// var Tarab=items.Tarab
+// var Romantic=items.Romantic
 var User=items.User
 module.exports = {
 signup:function (req, res)  {
